@@ -1,5 +1,6 @@
 package com.dice;
 
+import java.time.LocalDateTime;
 import java.util.concurrent.TimeUnit;
 
 import javax.management.RuntimeErrorException;
@@ -80,7 +81,9 @@ public class DiceJobSearch {
 		}
 		
 		
-		driver.quit();
+		driver.close();
+		
+		System.out.println("TEST COMPLITED -"+ LocalDateTime.now());
 		
 		
 		
